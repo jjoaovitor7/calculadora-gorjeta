@@ -1,3 +1,5 @@
+const tipsForm = document.querySelector(".tips-form");
+
 function calculateTip (event) {
     event.preventDefault();
 
@@ -26,4 +28,4 @@ function calculateTip (event) {
 document.getElementById("total-tip").style.display = "none";
 document.getElementById("each").style.display = "none";
 
-document.querySelector(".tips-form").addEventListener("submit", calculateTip);
+tipsForm.addEventListener("submit", calculateTip);

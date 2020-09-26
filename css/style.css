@@ -1,0 +1,68 @@
+:root {
+  --primary-color: lightcoral;
+  --secondary-color: DimGray;
+  --tertiary-color: Gainsboro;
+}
+
+body {
+  background: var(--primary-color); /* light coral */
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  height: 450px;
+  width: 360px;
+  margin: 100px auto;
+  background-color: #f7f7f7;
+  box-shadow: 5px 5px 5px var(--tertiary-color);
+  border-radius: 20px;
+}
+
+.title {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+
+.tips-form {
+    padding: 0 20px;
+}
+
+#bill,
+#service-quality,
+#people {
+  background: #fff;
+  width: 50px;
+  padding: 5px 5px 8px 8px;
+}
+
+#bill:focus,
+#service-quality:focus,
+#people:focus {
+  border: 3px solid var(--primary-color);
+}
+
+#service-quality {
+    width: 180px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+button[type="submit"]{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px auto;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+}

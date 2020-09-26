@@ -4,25 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Gorjetas</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div>
-      <h1>Calculadora de Gorjetas</h1>
-    </div>
+    <div class="container">
+      <h1 class="title">Calculadora de Gorjetas</h1>
 
-    <div>
-      <form>
-        <label for="bill"> Quanto ficou a conta? </label>
+      <div>
+        <form class="tips-form">
+          <label for="bill"> Quanto ficou a conta? </label>
 
-        <p>R$ <input type="number" placeholder="10" name="bill" id="bill" /></p>
+          <p>
+            R$ <input type="number" placeholder="10" name="bill" id="bill" />
+          </p>
 
-        <label for="service-quality">
-          <p>Como foi o seu serviço?</p>
-        </label>
+          <label for="service-quality">
+            <p></p>Como foi o seu serviço?</p>
+          </label>
 
-        <div>
-          <select name="service-quality">
+          <select name="service-quality" id="service-quality">
             <option disabled selected value="0">-- Escolha uma opção --</option>
             <option value="0.3">30% - Incrível</option>
             <option value="0.2">20% - Bom</option>
@@ -30,18 +39,17 @@
             <option value="0.1">10% - Ruim</option>
             <option value="0.05">5% - Péssimo</option>
           </select>
-        </div>
 
-        <label for="people">
-          <p>Quantas pessoas vão dividir a conta?</p>
-        </label>
+          <label for="people">
+            <p>Quantas pessoas vão dividir a conta?</p>
+          </label>
 
-        <p>
-            <input type="number" placeholder="1" name="people" id="people"> pessoa(s)
-        </p>
+          <input type="number" placeholder="1" name="people" id="people" />
+          pessoa(s)
 
-        <button type="submit">Calcular</button>
-      </form>
+          <button type="submit">Calcular</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

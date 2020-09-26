@@ -24,14 +24,14 @@
           <label for="bill"> Quanto ficou a conta? </label>
 
           <p>
-            R$ <input type="number" placeholder="10" name="bill" id="bill" />
+            R$ <input type="number" placeholder="10" name="bill" id="bill" required />
           </p>
 
           <label for="service-quality">
             <p></p>Como foi o seu serviço?</p>
           </label>
 
-          <select name="service-quality" id="service-quality">
+          <select name="service-quality" id="service-quality" required>
             <option disabled selected value="0">-- Escolha uma opção --</option>
             <option value="0.3">30% - Incrível</option>
             <option value="0.2">20% - Bom</option>
@@ -44,12 +44,20 @@
             <p>Quantas pessoas vão dividir a conta?</p>
           </label>
 
-          <input type="number" placeholder="1" name="people" id="people" />
+          <input type="number" placeholder="1" name="people" id="people" required />
           pessoa(s)
 
           <button type="submit">Calcular</button>
         </form>
       </div>
+
+      <div id="total-tip">
+        Gorjeta total:
+        R$<span id="tip">0.00</span>
+        <span id="each">cada</span>
+      </div>
     </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

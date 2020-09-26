@@ -1,7 +1,7 @@
 :root {
-  --primary-color: lightcoral;
+  --primary-color: #0000ff;
   --secondary-color: DimGray;
-  --tertiary-color: Gainsboro;
+  --tertiary-color: #add8e6;
 }
 
 body {

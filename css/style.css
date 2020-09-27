@@ -32,7 +32,7 @@ body {
 }
 
 .tips-form {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 #bill,
@@ -50,21 +50,27 @@ body {
 }
 
 #service-quality {
-    width: 180px;
-    padding: 5px;
-    font-size: 14px;
+  width: 180px;
+  padding: 5px;
+  font-size: 14px;
 }
 
-button[type="submit"]{
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 30px auto;
-    background: var(--primary-color);
-    border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    color: #fff;
+button[type="submit"] {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px auto;
+  background: var(--primary-color);
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.95 ;
+}
+
+button:hover {
+  opacity: 1;
 }
 
 #total-tip {

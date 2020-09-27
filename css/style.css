@@ -69,7 +69,7 @@ button[type="submit"] {
   opacity: 0.95 ;
 }
 
-button:hover {
+button[type="submit"]:hover {
   opacity: 1;
 }
 
